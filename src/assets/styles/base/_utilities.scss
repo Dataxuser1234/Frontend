@@ -1,0 +1,228 @@
+.mt {
+    &-msg {
+        font-size: toRem(12);
+        font-weight: 500;
+        &-error {
+            color: $error;
+        }
+        &-info {
+            color: $info;
+        }
+        &-success {
+            color: $success;
+        }
+    }
+}
+.mt {
+    &-m {
+        &-a {
+            &-sm {
+                margin: toRem(4);
+            }
+            &-md {
+                margin: toRem(8);
+            }
+            &-lg {
+                margin: toRem(16);
+            }
+            &-xl {
+                margin: toRem(32);
+            }
+        }
+        &-y {
+            &-sm {
+                margin: toRem(4) 0;
+            }
+            &-md {
+                margin: toRem(8) 0;
+            }
+            &-lg {
+                margin: toRem(16) 0;
+            }
+            &-xl {
+                margin: toRem(32) 0;
+            }
+        }
+        &-x {
+            &-sm {
+                margin: 0 toRem(4);
+            }
+            &-md {
+                margin: 0 toRem(8);
+            }
+            &-lg {
+                margin: 0 toRem(16);
+            }
+            &-xl {
+                margin: 0 toRem(32);
+            }
+        }
+        &-t {
+            &-sm {
+                margin-top: toRem(4);
+            }
+            &-md {
+                margin-top: toRem(8);
+            }
+            &-lg {
+                margin-top: toRem(16);
+            }
+            &-xl {
+                margin-top: toRem(32);
+            }
+        }
+        &-b {
+            &-sm {
+                margin-bottom: toRem(4);
+            }
+            &-md {
+                margin-bottom: toRem(8);
+            }
+            &-lg {
+                margin-bottom: toRem(16);
+            }
+            &-xl {
+                margin-bottom: toRem(32);
+            }
+        }
+        &-l {
+            &-sm {
+                margin-left: toRem(4);
+            }
+            &-md {
+                margin-left: toRem(8);
+            }
+            &-lg {
+                margin-left: toRem(16);
+            }
+            &-xl {
+                margin-left: toRem(32);
+            }
+        }
+        &-r {
+            &-sm {
+                margin-right: toRem(4);
+            }
+            &-md {
+                margin-right: toRem(8);
+            }
+            &-lg {
+                margin-right: toRem(16);
+            }
+            &-xl {
+                margin-right: toRem(32);
+            }
+        }
+    }
+    &-p {
+        &-a {
+            &-sm {
+                padding: toRem(4);
+            }
+            &-md {
+                padding: toRem(8);
+            }
+            &-lg {
+                padding: toRem(16);
+            }
+            &-xl {
+                padding: toRem(32);
+            }
+        }
+        &-y {
+            &-sm {
+                padding: toRem(4) 0;
+            }
+            &-md {
+                padding: toRem(8) 0;
+            }
+            &-lg {
+                padding: toRem(16) 0;
+            }
+            &-xl {
+                padding: toRem(32) 0;
+            }
+        }
+        &-x {
+            &-sm {
+                padding: 0 toRem(4);
+            }
+            &-md {
+                padding: 0 toRem(8);
+            }
+            &-lg {
+                padding: 0 toRem(16);
+            }
+            &-xl {
+                padding: 0 toRem(32);
+            }
+        }
+        &-t {
+            &-sm {
+                padding-top: toRem(4);
+            }
+            &-md {
+                padding-top: toRem(8);
+            }
+            &-lg {
+                padding-top: toRem(16);
+            }
+            &-xl {
+                padding-top: toRem(32);
+            }
+        }
+        &-b {
+            &-sm {
+                padding-bottom: toRem(4);
+            }
+            &-md {
+                padding-bottom: toRem(8);
+            }
+            &-lg {
+                padding-bottom: toRem(16);
+            }
+            &-xl {
+                padding-bottom: toRem(32);
+            }
+        }
+        &-l {
+            &-sm {
+                padding-left: toRem(4);
+            }
+            &-md {
+                padding-left: toRem(8);
+            }
+            &-lg {
+                padding-left: toRem(16);
+            }
+            &-xl {
+                padding-left: toRem(32);
+            }
+        }
+        &-r {
+            &-sm {
+                padding-right: toRem(4);
+            }
+            &-md {
+                padding-right: toRem(8);
+            }
+            &-lg {
+                padding-right: toRem(16);
+            }
+            &-xl {
+                padding-right: toRem(32);
+            }
+        }
+    }
+}
+.width {
+    &-full {
+        width: 100%;
+    }
+    &-half {
+        width: 50%;
+    }
+    &-quarter {
+        width: 25%;
+    }
+}

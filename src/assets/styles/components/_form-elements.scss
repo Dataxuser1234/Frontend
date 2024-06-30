@@ -1,0 +1,60 @@
+.mt {
+    &-form {
+        &-group {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: toRem(4);
+            &-checkbox {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+        &-label {
+            font-size: 1rem;
+        }
+        &-control {
+            &-input {
+                height: toRem(40);
+                border-radius: toRem(4);
+                border: 1px solid $input-border;
+                width: 100%;
+                padding: 0 0.5rem;
+                transition: all 0.5s;
+                &:focus {
+                    outline: none;
+                    border-color: $info;
+                }
+            }
+        }
+    }
+}
+.has-icon {
+    position: relative;
+    .mt-form-control-icon {
+        position: absolute;
+        top: 0;
+        .mt-button {
+            color: $text-light;
+        }
+    }
+    &.left-aligned {
+        .mt-form-control-icon {
+            left: 0;
+        }
+        .mt-form-control-input {
+            padding-left: 2rem;
+        }
+    }
+    &.right-aligned {
+        .mt-form-control-icon {
+            right: 0;
+        }
+        .mt-form-control-input {
+            padding-right: 2rem;
+        }
+    }
+}

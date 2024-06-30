@@ -1,0 +1,51 @@
+<div class="mt-main-content">
+    <div class="mt-card">
+        <div class="mt-card_header">
+            <h1>Login</h1>
+            <label class="text">Hello there, login to the screen below</label>
+        </div>
+        <div class="mt-card_content">
+            <form [formGroup]="signinForm" (submit)="handleFormSubmit()">
+                <div class="mt-form-group">
+                    <label class="mt-form-label">Username / Email Address</label>
+                    <div class="mt-from-control">
+                        <input class="mt-form-control-input" type="text" formControlName="username" />
+                    </div>
+                    <div class="mt-form-group-info" *ngIf="signinForm.controls['username'].invalid && (isSubmitted || signinForm.controls['username'].dirty || signinForm.controls['username'].touched)">
+                        <span class="mt-msg mt-msg-error">This field is required</span>
+                    </div>
+                </div>
+                <div class="mt-form-group">
+                    <label class="mt-form-label">Password</label>
+                    <div class="mt-from-control has-icon right-aligned">
+                        <input class="mt-form-control-input" type="password" formControlName="password" />
+                        <div class="mt-form-control-icon">
+                            <button type="button" class="mt-button mt-button-transparent">
+                                <i class="fa-regular fa-eye"></i>
+                                <!-- <i class="fa-regular fa-eye-slash"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-form-group-info" *ngIf="signinForm.controls['password'].invalid && (isSubmitted || signinForm.controls['password'].dirty || signinForm.controls['password'].touched)">
+                        <span class="mt-msg mt-msg-error">This field is required</span>
+                    </div>
+                </div>
+                <div class="signin-options">
+                    <div class="mt-form-group mt-form-group-checkbox">
+                        <div class="mt-from-control">
+                            <input type="checkbox" name="rememberMe" id="rememberMe" />
+                        </div>
+                        <label class="mt-form-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <div class="mt-card_footer">
+                    <div class="unauth-redirectback">
+                        <button class="mt-button mt-button-primary" type="submit">Signin</button>
+                        <p>Don’t have an account? <a href="#">Create Account</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+.mt {
+    &-button {
+        background: transparent;
+        border-radius: toRem(4);
+        border: 1px solid transparent;
+        height: toRem(40);
+        padding: 0 0.5rem;
+        box-shadow: none;
+        cursor: pointer;
+        font-weight: 600;
+        &-transparent {
+            background: transparent;
+            border-color: transparent;
+        }
+        &-primary {
+            background: $primary;
+            border-color: $primary;
+            color: $white;
+            &-outlined {
+                background: $white;
+                color: $primary;
+            }
+        }
+        &-secondary {
+            background: $secondary;
+            border-color: $secondary;
+            color: $white;
+            &-outlined {
+                background: $white;
+                color: $secondary;
+            }
+        }
+    }
+}

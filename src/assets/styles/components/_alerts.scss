@@ -1,0 +1,55 @@
+.mt {
+    &-alert {
+        &-banner {
+            border-radius: toRem(4);
+            border: 1px solid transparent;
+            padding: 1rem 1.25rem;
+            background: transparent;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            .alert-icon {
+                i {
+                    color: $text;
+                }
+            }
+            .alert-content{
+                .alert-header{
+                    color: $text;
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                }
+                p{
+                    color: $text;
+                }
+            }
+        }
+        &-success {
+            border-color: $success;
+            background: $succes-bg;
+            .alert-icon {
+                i {
+                    color: $success;
+                }
+            }
+            .alert-content{
+                .alert-header{
+                    color: $success;
+                }
+            }
+        }
+        &-error {
+            border-color: $error;
+            .alert-icon {
+                i {
+                    color: $error;
+                }
+            }
+            .alert-content{
+                .alert-header{
+                    color: $error;
+                }
+            }
+        }
+    }
+}
