@@ -1,0 +1,17 @@
+.mt {
+    &_auth {
+        &-layout {
+            height: 100vh;
+            background: $auth-layout-bg;
+            position: relative;
+        }
+    }
+    &_main-content {
+        height: 100%;
+        display: grid;
+        grid-template-columns: toRem(72) 1fr;
+    }
+    &_router-outlet{
+        padding: 1.5rem;
+    }
+}

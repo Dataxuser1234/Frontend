@@ -1,19 +1,39 @@
-.mt {
-    &-card {
-        border-radius: toRem(4);
-        background: $white;
-        padding: 1rem 0;
-        &_header {
-            padding: 1rem 2rem;
-            h1 {
-                margin-bottom: 1rem;
+.mt_card {
+    border-radius: toRem(4);
+    background: $white;
+    padding: 1rem 0;
+    &-header {
+        padding: 1rem 2rem;
+        &-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h1 {
+            margin-bottom: 1rem;
+            font-size: toRem(40);
+        }
+    }
+    &-content {
+        padding: 1rem 2rem;
+    }
+    &-footer {
+        margin-top: 2rem;
+    }
+    &-pipeline {
+        padding: 1.5rem;
+        .mt_card-header {
+            border-bottom: 1px solid $card-border;
+            padding: 0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            h1{
+                margin-bottom: .5rem;
             }
         }
-        &_content {
-            padding: 1rem 2rem;
+        .mt_card-content {
         }
-        &_footer {
-            margin-top: 2rem;
+        .mt_card-footer {
         }
     }
 }

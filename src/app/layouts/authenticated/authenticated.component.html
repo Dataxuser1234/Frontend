@@ -1,1 +1,35 @@
-<p>authenticated works!</p>
+<main class="mt_auth-layout">
+	<section class="mt_main-content">
+		<nav aria-describedby="Secondary Navigation" class="mt_nav-secondary-container">
+			<ul class="mt_nav-secondary-list">
+				<li class="mt_nav-secondary-item">
+					<button type="button" class="mt_button">
+						<img src="assets/media/icons/home.svg" />
+					</button>
+					<span class="mt_nav-secondary-item-caption">Home</span>
+				</li>
+				<li class="mt_nav-secondary-item is-active">
+					<button type="button" class="mt_button">
+						<img src="assets/media/icons/timeline.svg" />
+					</button>
+					<span class="mt_nav-secondary-item-caption">Pipelines</span>
+				</li>
+				<li class="mt_nav-secondary-item">
+					<button type="button" class="mt_button">
+						<img src="assets/media/icons/projects.svg" />
+					</button>
+					<span class="mt_nav-secondary-item-caption">Projects</span>
+				</li>
+				<li class="mt_nav-secondary-item">
+					<button type="button" class="mt_button">
+						<img src="assets/media/icons/documents.svg" />
+					</button>
+					<span class="mt_nav-secondary-item-caption">Docs</span>
+				</li>
+			</ul>
+		</nav>
+		<div class="mt_router-outlet">
+			<router-outlet></router-outlet>
+		</div>
+	</section>
+</main>

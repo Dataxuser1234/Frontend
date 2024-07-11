@@ -1,11 +1,15 @@
 .mt {
-    &-button {
+    &_button {
         background: transparent;
         border-radius: toRem(4);
         border: 1px solid transparent;
         height: toRem(40);
         padding: 0 0.5rem;
         box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
         cursor: pointer;
         font-weight: 600;
         &-transparent {
@@ -29,6 +33,12 @@
                 background: $white;
                 color: $secondary;
             }
+        }
+        &-link{
+            color: $primary;
+        }
+        &-add-pipiline{
+            width: 200px;
         }
     }
 }

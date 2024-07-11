@@ -19,52 +19,26 @@ $text-disabled:                     #757575;
 
 
 // State Colors
+$black:                             #000000;
+$dark:                              #131313;
+$white:                             #FFFFFF;
 $success:                           #2E7D32;
 $succes-bg:                         rgba(46, 125, 50, 0.039);
 $info:                              #0288D1;
 $error:                             #D32F2F;
 $warning:                           #DD7412;
-$white:                             #FFFFFF;
-$divider:                           rgba(0, 0, 0, 0.122);
-$input-border:                      rgba(0, 0, 0, 0.231);
-$success-bg:                        #E3F3EA;
-$invalid-bg:                        #E0E0E0;
-$warning-bg:                        #ffe5cc;
-$destructive:                       #a12f2b;
-$error-bg:                          #F7E7E8;
-$disabled:                          #f8f8f8;
-$default:                           #eceef0;
 
 // Opacity Colors
-$warning-opacity:                   rgba(221, 116, 18, 0.1);
-$slot-bg:                           rgba(33, 65, 138, 0.1);
-$box-shadow-bg:                     rgba(29, 65, 137, 0.03);
-$error-shade:                       rgba(194, 57, 52, 0.1);
-$error-shade-dark:                  rgba(194, 57, 52, 0.2);
-$success-shade:                     rgba(25, 159, 82, 0.1);
-$info-shade:                        rgba(33, 122, 227, 0.1);
-$warning-shade:                     rgba(194, 57, 52, 0.1);
-$info-chip-bg:                      rgba(33, 122, 227, 0.12);
-$warning-chip-bg:                   rgba(250, 140, 42, 0.12);
-$badge-card-bg:                     rgba(33, 65, 138, 0.05);
+$card-border:                       rgba(0, 0, 0, 0.12);
+$input-border:                      rgba(0, 0, 0, 0.231);
 
-// Black Colors
-$black:                             #000000;
-$dark:                              #1F2937;
-$gray:                              #43536C;
-$primary-light:                     #8B94A5;
-$light:                             #6A768A;
-$extra-light:                       #CDDEEE;
-$white:                             #FFFFFF;
-$question-label:                    #7b7b7b;
-
-//table
-$table-header:                      #e6eff7;
 
 // Generic
 $background:                        #F5F9FF;
+$auth-layout-bg:                    #eef9f3;
 
 
+$brr-normal:                          6px;
 // Viewports
 $mobile-start:                        320px;
 $mobile-end:                          767px;
@@ -73,7 +47,6 @@ $tablet-potriat-end:                  1023px;
 $tablet-landscape-start:              1024px;
 $tablet-landscape-end:                1280px;
 $desktop-start:                       1281px;
-
 
 // metrics
 $xx-small:                            0.25rem;

@@ -16,6 +16,9 @@
 .mt {
     &-m {
         &-a {
+            &-none {
+                margin: 0 !important;
+            }
             &-sm {
                 margin: toRem(4);
             }
@@ -116,6 +119,9 @@
     }
     &-p {
         &-a {
+            &-none {
+                padding: 0 !important;
+            }
             &-sm {
                 padding: toRem(4);
             }
@@ -225,4 +231,12 @@
     &-quarter {
         width: 25%;
     }
+}
+ul,
+ol {
+    list-style: none;
+}
+.items-center{
+    align-items: center;
+    justify-content: center;
 }

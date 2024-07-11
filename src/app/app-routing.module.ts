@@ -3,9 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { UnAuthenticatedViewsModule } from './pages/unauthenticated/unauthenticated.module';
 import { UnauthenticatedComponent } from './layouts/unauthenticated/unauthenticated.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { AuthenticatedComponent } from './layouts/authenticated/authenticated.component';
+import { AuthenticatedViewsModule } from './pages/authenticated/authenticated.module';
 
 const routes: Routes = [
-    { path: "", component: UnauthenticatedComponent, loadChildren: () => UnAuthenticatedViewsModule },
+    { path: "", redirectTo: "pipeline", pathMatch: "full" },
+    { path: "auth", component: UnauthenticatedComponent, loadChildren: () => UnAuthenticatedViewsModule },
+    { path: "", component: AuthenticatedComponent, loadChildren: () => AuthenticatedViewsModule },
     { path: "notfound", component: NotfoundComponent },
     { path: "**", redirectTo: "notfound" },
 ];

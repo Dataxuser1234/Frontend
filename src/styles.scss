@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 // Base
 @import "./assets/styles/base/variables";
 @import "./assets/styles/base/functions";
@@ -10,11 +11,15 @@
 @import "./assets/styles/base/global";
 
 // Components
-@import "./assets/styles/components/unauthenticated";
 @import "./assets/styles/components/buttons";
 @import "./assets/styles/components/alerts";
 @import "./assets/styles/components/form-elements";
 @import "./assets/styles/components/cards";
+@import "./assets/styles/components/navigation";
+
+// Layouts
+@import "./assets/styles/layouts/unauthenticated";
+@import "./assets/styles/layouts/authenticated";
 
 // Pages
 @import "./assets/styles/pages/signin";
