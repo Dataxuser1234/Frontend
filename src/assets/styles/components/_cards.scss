@@ -23,17 +23,13 @@
     &-pipeline {
         padding: 1.5rem;
         .mt_card-header {
-            border-bottom: 1px solid $card-border;
+            // border-bottom: 1px solid $card-border;
             padding: 0;
             padding-bottom: 1.5rem;
-            margin-bottom: 1.5rem;
+            // margin-bottom: 1.5rem;
             h1{
                 margin-bottom: .5rem;
             }
-        }
-        .mt_card-content {
-        }
-        .mt_card-footer {
         }
     }
 }
