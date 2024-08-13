@@ -1,0 +1,30 @@
+.mt_grid {
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    &.gutters {
+        &-large {
+            gap: 2rem;
+        }
+        &-small {
+            gap: 1rem;
+        }
+    }
+    &.grid-col {
+        &-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &-5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        &-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}

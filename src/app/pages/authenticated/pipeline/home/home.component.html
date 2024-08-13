@@ -1,37 +1,47 @@
-<div class="mt_card mt_card-pipeline">
-    <div class="mt_card-header">
-        <div class="mt_card-header-row">
-            <div class="mat_card-header-info">
-                <h1>Pipelines</h1>
-                <label class="text-regular">Move data between any Source and Destination</label>
-            </div>
-            <div class="mat_card-header-actions">
-                <button class="mt_button mt_button-primary mt_button-add-pipiline">
-                    <i class="fa fa-plus"></i>
-                    <span>Create New Pipeline</span>
-                </button>
-                <button class="mt_button mt_button-link width-full mt-m-t-sm">
-                    <i class="fa-regular fa-circle-question"></i>
-                    <span>More Details</span>
-                </button>
-            </div>
-        </div>
-        <div class="mt_card-header-row mt-m-t-xl">
-            <div class="mt-form-group mt-m-a-none width-full">
-                <div class="mt-from-control has-icon left-aligned">
-                    <input class="mt-form-control-input" type="text" placeholder="Search Pipeline" />
-                    <div class="mt-form-control-icon">
-                        <button type="button" class="mt_button mt_button-transparent">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mt_card-content">
-        <div class="mt_nodata-container">
-            
-        </div>
-    </div>
+<div class="mt_route-wrapper">
+	<div class="mt_card mt_card-pipeline">
+		<div class="mt_card-header">
+			<div class="mt_card-header-row">
+				<div class="mat_card-header-info">
+					<h1>Pipelines</h1>
+					<label class="text-regular">Move data between any Source and Destination</label>
+				</div>
+				<div class="mat_card-header-actions">
+					<button class="mt_button mt_button-primary mt_button-add-pipiline">
+						<i class="fa fa-plus"></i>
+						<span>Create New Pipeline</span>
+					</button>
+					<button class="mt_button mt_button-link width-full mt-m-t-sm">
+						<i class="fa-regular fa-circle-question"></i>
+						<span>More Details</span>
+					</button>
+				</div>
+			</div>
+			<div class="mt_card-header-row">
+				<div class="mt-form-group mt-m-a-none width-full">
+					<div class="mt-from-control has-icon left-aligned">
+						<input class="mt-form-control-input" type="text" placeholder="Search Pipeline" />
+						<div class="mt-form-control-icon">
+							<button type="button" class="mt_button mt_button-transparent">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt_card-header-row filter-results-description">
+				<p class="caption-text">1 pipeline found</p>
+			</div>
+		</div>
+		<div class="mt_card-content">
+			<div class="mt_pipeline-wrapper">
+				<app-pipeline-item *ngIf="hasPipelineData;else noDataComponent"></app-pipeline-item>
+			</div>
+			<ng-template #noDataComponent>
+				<div class="mt_nodata-container">
+					No data
+				</div>
+			</ng-template>
+		</div>
+	</div>
 </div>

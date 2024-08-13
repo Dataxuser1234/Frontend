@@ -1,0 +1,25 @@
+.mt_table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        th {
+            background: $table-header;
+            padding: 1rem;
+            border-top: 1px solid $table-border;
+            border-bottom: 1px solid $table-border;
+            color: $table-header-font;
+            text-align: left;
+            font-size: toRem(14);
+            font-weight: 500;
+        }
+    }
+    tbody {
+        td {
+            background: $white;
+            padding: 1rem;
+            border-top: 1px solid $card-border;
+            border-bottom: 1px solid $card-border;
+            font-size: toRem(14);
+        }
+    }
+}

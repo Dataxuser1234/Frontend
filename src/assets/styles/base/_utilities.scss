@@ -12,6 +12,25 @@
             color: $success;
         }
     }
+    &_chip {
+        padding: 0.25rem 0.5rem;
+        border-radius: toRem(6);
+        font-size: toRem(12);
+        i {
+            margin-right: 0.5rem;
+        }
+        &-success {
+            background: $succes-bg;
+            color: $success;
+        }
+        &-error {
+            background: $error-bg;
+            color: $error;
+        }
+    }
+    &_height-auto {
+        height: auto !important;
+    }
 }
 .mt {
     &-m {
@@ -236,7 +255,10 @@ ul,
 ol {
     list-style: none;
 }
-.items-center{
+.items-center {
     align-items: center;
     justify-content: center;
+}
+.caption-text {
+    color: $text-light;
 }

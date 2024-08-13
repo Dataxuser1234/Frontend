@@ -23,10 +23,12 @@ $black:                             #000000;
 $dark:                              #131313;
 $white:                             #FFFFFF;
 $success:                           #2E7D32;
-$succes-bg:                         rgba(46, 125, 50, 0.039);
+$succes-bg:                         rgba(46, 125, 50, 0.12);
 $info:                              #0288D1;
+$error-bg:                          rgb(211, 47, 47, .12);
 $error:                             #D32F2F;
-$warning:                           #DD7412;
+$warning:                           #ED6C02;
+$warning-bg:                        #FDF0E6;
 
 // Opacity Colors
 $card-border:                       rgba(0, 0, 0, 0.12);
@@ -36,6 +38,9 @@ $input-border:                      rgba(0, 0, 0, 0.231);
 // Generic
 $background:                        #F5F9FF;
 $auth-layout-bg:                    #eef9f3;
+$table-border:                      #AEB6CF;
+$table-header:                      #f5f5f5;
+$table-header-font:                 #555555;
 
 
 $brr-normal:                          6px;

@@ -11,11 +11,14 @@
 @import "./assets/styles/base/global";
 
 // Components
+@import "./assets/styles/components/grids";
+@import "./assets/styles/components/table";
 @import "./assets/styles/components/buttons";
 @import "./assets/styles/components/alerts";
 @import "./assets/styles/components/form-elements";
 @import "./assets/styles/components/cards";
 @import "./assets/styles/components/navigation";
+@import "./assets/styles/components/pipeline";
 
 // Layouts
 @import "./assets/styles/layouts/unauthenticated";

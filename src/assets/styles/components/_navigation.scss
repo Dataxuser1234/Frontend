@@ -36,5 +36,69 @@
                 }
             }
         }
+        &-tertiary {
+            &-container {
+                background: $white;
+                height: 100%;
+                width: toRem(240);
+                padding: 1rem 0;
+                // position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &-list {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: .5rem;
+            }
+            &-item {
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: .5rem 1rem;
+                transition: all .3s;
+                &:after{
+                    content: "";
+                    width: toRem(4);
+                    height: 100%;
+                    background: $white;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all .3s;
+                }
+                .mt_button {
+                    background: transparent;
+                    border: none;
+                    border-radius: toRem(6);
+                    display: flex;
+                    transition: all .3s;
+                }
+                &-caption {
+                    display: block;
+                    color: $text-light;
+                    font-size: toRem(14);
+                    font-weight: 500;
+                    transition: all .3s;
+                }
+                &.is-active, &:hover{
+                    background: rgba(0, 185, 108, 0.04);
+                    &:after{
+                        background: $primary;
+                    }
+                    .mt_nav-tertiary-item-caption {
+                        color: $primary;
+                    }
+                    .mt_button {
+                        color: $primary;
+                    } 
+                }
+            }
+        }
     }
 }

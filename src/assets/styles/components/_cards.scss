@@ -4,6 +4,9 @@
     padding: 1rem 0;
     &-header {
         padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         &-row {
             display: flex;
             align-items: center;
@@ -23,12 +26,46 @@
     &-pipeline {
         padding: 1.5rem;
         .mt_card-header {
-            // border-bottom: 1px solid $card-border;
+            border-bottom: 1px solid $card-border;
             padding: 0;
-            padding-bottom: 1.5rem;
-            // margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            margin-bottom: 0;
             h1{
                 margin-bottom: .5rem;
+            }
+        }
+        .mt_card-content {
+            padding: 0;
+        }
+        &-item{
+            background: transparent;
+            padding: 0;
+            .mt_card-header {
+                border: none;
+                margin-bottom: 1.5rem;
+                padding-bottom: 0;
+                h1{
+                    font-size: 2rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &-stats{
+        padding: 1rem;
+        h6{
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        &-details{
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            p{
+                font-weight: 600;
             }
         }
     }
